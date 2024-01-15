@@ -3,8 +3,8 @@ import { Server } from 'socket.io';
 @WebSocketGateway(8001, {
   cors: {
     origin: '*',
-    // path: '/ws',
   },
+  path: '/ws',
 })
 export class WebsocketGateway {
   @WebSocketServer()
