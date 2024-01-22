@@ -4,7 +4,6 @@ import { Server } from 'socket.io';
   cors: {
     origin: 'http://localhost:3000',
   },
-  path: '/ws',
 })
 export class WebsocketGateway {
   @WebSocketServer()
